@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+    android:background="?BackgroundColor"
+  android:orientation="vertical">
+
+  <include layout="@layout/baner"/>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+      android:id="@+id/latest"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:orientation="vertical">
+
+      <com.deafop.library.IconImageView
+          android:translationZ="2dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:padding="16dp"
+          android:background="@drawable/abs_shuffle"
+          android:elevation="3dp"
+          app:srcCompat="@drawable/ic_menu_slideshow"
+          app:tint="#fff"/>
+
+      <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:gravity="center"
+        android:text="Latest"
+          android:textColor="?Titel_2"
+        android:textSize="12sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+      android:id="@+id/category"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:orientation="vertical">
+
+      <com.deafop.library.IconImageView
+        android:translationZ="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="16dp"
+        android:background="@drawable/abs_last_added_playlist"
+        android:elevation="3dp"
+        app:srcCompat="@drawable/ic_folder_white_24dp"
+        app:tint="#fff"/>
+
+      <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:gravity="center"
+        android:text="Category"
+          android:textColor="?Titel_2"
+        android:textSize="12sp"/>
+
+    </LinearLayout>
+    <LinearLayout
+      android:id="@+id/all"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:orientation="vertical">
+
+      <com.deafop.library.IconImageView
+          android:translationZ="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="16dp"
+        android:background="@drawable/abs_top_tracks_playlist"
+        android:elevation="3dp"
+        app:srcCompat="@drawable/ic_movie"
+        app:tint="#fff"/>
+
+      <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:gravity="center"
+        android:text="All Video"
+          android:textColor="?Titel_2"
+        android:textSize="12sp"/>
+
+    </LinearLayout>
+    <LinearLayout
+      android:id="@+id/most_view"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:orientation="vertical">
+
+      <com.deafop.library.IconImageView
+          android:translationZ="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="16dp"
+        android:background="@drawable/abs_timer"
+        android:elevation="3dp"
+        app:srcCompat="@drawable/ic_trending_up_white_24dp"
+        app:tint="#fff"/>
+
+      <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:gravity="center"
+        android:text="Most View"
+          android:textColor="?Titel_2"
+        android:textSize="12sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/About"
+        android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:orientation="vertical">
+
+      <com.deafop.library.IconImageView
+          android:translationZ="2dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:padding="16dp"
+          android:background="@drawable/abs_shuffle"
+          android:elevation="2dp"
+          app:srcCompat="@drawable/ic_bookmark"
+          app:tint="#fff"/>
+
+      <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:gravity="center"
+        android:text="Favourite"
+        android:textColor="?Titel_2"
+        android:textSize="12sp"/>
+
+    </LinearLayout>
+  </LinearLayout>
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_margin="12dp"
+      android:background="?Boder"  />
+</LinearLayout>

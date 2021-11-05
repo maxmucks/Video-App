@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:background="#fff"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <TextView
+            android:paddingRight="2dp"
+            android:paddingLeft="2dp"
+            android:textColor="#fff"
+           android:textStyle="bold"
+            android:background="#FFCC66"
+            android:text="AD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/cancel"
+            android:src="@drawable/ic_cancel_black_24dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="60dp"
+            android:src="@drawable/ic_undraw_successful_purchase_uyin"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"/>
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_undraw_empty_cart_co35"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"/>
+
+    </RelativeLayout>
+
+   <RelativeLayout
+       android:layout_marginTop="10dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <TextView
+           android:textStyle="bold"
+           android:textSize="25dp"
+           android:textColor="#2196F3"
+           android:layout_centerHorizontal="true"
+           android:text="DEMO APP"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+   </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/t1"
+            android:textSize="19dp"
+            android:textColor="#121212"
+            android:layout_centerHorizontal="true"
+            android:text="Buy this App Envato Market"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_margin="3dp"
+            android:id="@+id/t2"
+            android:layout_below="@id/t1"
+            android:textSize="19dp"
+            android:textColor="#D3121212"
+            android:layout_centerHorizontal="true"
+            android:text="this App Developed by : Nemosofts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+          android:textAlignment="center"
+            android:layout_below="@id/t2"
+            android:textSize="18dp"
+            android:textColor="#B1121212"
+            android:text="Nemosofts is a Leading Mobile Application Department Company in Sri Lanka."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="#2196F3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/text_view_go_pro"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:text="BUY NOW"
+            android:textColor="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

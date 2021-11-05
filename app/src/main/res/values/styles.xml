@@ -1,0 +1,135 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@android:color/transparent</item>
+
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/background_Light</item>
+        <item name="colorPrimaryDark">@color/background_Light</item>
+        <item name="colorAccent">@color/colorAccent_Light</item>
+
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="icon_a">@drawable/ic_keyboard_backspace_black_24dp2</item>
+        <item name="Boder">@color/Boder_Light</item>
+        <item name="Titel_1">@color/Titele_A_Light</item>
+        <item name="Titel_2">@color/Titele_AA_Light</item>
+        <item name="BackgroundColor_S">@color/Background_Light_S</item>
+        <item name="BackgroundColor">@color/background_Light</item>
+        <item name="BackgroundTint">@color/background_Night</item>
+
+        <item name="android:windowAnimationStyle">@style/WindowAnimationTransition</item>
+    </style>
+
+    <style name="AppTheme2" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.Dark</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@color/background_Night</item>
+
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/background_Night</item>
+        <item name="colorPrimaryDark">@color/background_Night</item>
+        <item name="colorAccent">@color/colorAccent_Night</item>
+
+        <item name="icon_a">@drawable/ic_keyboard_backspace_black_24dp</item>
+        <item name="Boder">@color/Boder_Night</item>
+        <item name="Titel_1">@color/Titele_A_Night</item>
+        <item name="Titel_2">@color/Titele_AA_Night</item>
+        <item name="BackgroundColor_S">@color/Background_Night_S</item>
+        <item name="BackgroundColor">@color/background_Night</item>
+        <item name="BackgroundTint">@color/background_Light</item>
+
+        <item name="android:windowAnimationStyle">@style/WindowAnimationTransition</item>
+    </style>
+
+    <style name="WindowAnimationTransition">
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="ThemeDialog" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle_Light</item>
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle_Light</item>
+    </style>
+
+    <style name="ThemeDialog2" parent="@style/ThemeOverlay.AppCompat.Dark">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+    </style>
+
+    <style name="NegativeButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="PositiveButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="NegativeButtonStyle_Light" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="PositiveButtonStyle_Light" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">#000000</item>
+    </style>
+
+
+    <style name="Toolbar48" parent="Toolbar">
+        <item name="android:layout_height">48dp</item>
+    </style>
+
+    <style name="Toolbar">
+        <item name="titleMarginStart">16dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?actionBarSize</item>
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.Dark</item>
+        <item name="popupTheme">?popupTheme</item>
+        <item name="android:transitionName" tools:ignore="NewApi">toolbar</item>
+        <item name="layout_collapseMode">pin</item>
+        <item name="contentInsetStartWithNavigation">0dp</item>
+        <item name="contentInsetStart">0dp</item>
+    </style>
+
+
+    <style name="AppTheme3" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/background_Light</item>
+        <item name="colorPrimaryDark">@color/background_Light</item>
+        <item name="colorAccent">@color/colorAccent_Light</item>
+
+        <item name="icon_a">@drawable/ic_keyboard_backspace_black_24dp2</item>
+        <item name="Boder">@color/Boder_Light</item>
+        <item name="Titel_1">@color/Titele_A_Light</item>
+        <item name="Titel_2">@color/Titele_AA_Light</item>
+        <item name="BackgroundColor_S">@color/Background_Light_S</item>
+        <item name="BackgroundColor">@color/background_Light</item>
+        <item name="BackgroundTint">@color/background_Night</item>
+    </style>
+
+    <style name="AppTheme4" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/background_Night</item>
+        <item name="colorPrimaryDark">@color/background_Night</item>
+        <item name="colorAccent">@color/colorAccent_Night</item>
+
+        <item name="icon_a">@drawable/ic_keyboard_backspace_black_24dp</item>
+        <item name="Boder">@color/Boder_Night</item>
+        <item name="Titel_1">@color/Titele_A_Night</item>
+        <item name="Titel_2">@color/Titele_AA_Night</item>
+        <item name="BackgroundColor_S">@color/Background_Night_S</item>
+        <item name="BackgroundColor">@color/background_Night</item>
+        <item name="BackgroundTint">@color/background_Light</item>
+    </style>
+
+    <style name="YOURSTYLE" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:textColor">@color/background_Light</item>
+        <item name="android:itemBackground">@color/colorAccent_Light</item>
+    </style>
+
+
+</resources>

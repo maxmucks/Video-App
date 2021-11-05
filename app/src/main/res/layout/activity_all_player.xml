@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?BackgroundColor"
+    tools:context=".Activity.video.All_PlayerActivity">
+
+    <RelativeLayout
+        android:background="?BackgroundTint"
+        android:id="@+id/dailymotion_player"
+        android:layout_width="match_parent"
+        android:layout_height="240dp">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:background="@color/black"
+            android:src="@drawable/youtube"
+            android:id="@+id/image_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:padding="5dp"
+            android:backgroundTint="#75000000"
+            android:background="@drawable/abs_history_playlist"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_play_arrow_white_24dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"/>
+
+        <androidx.appcompat.widget.Toolbar
+            android:backgroundTint="@color/black"
+            android:id="@+id/toolbar"
+            android:background="@drawable/now_playing_bottom_gradient"
+            app:titleTextColor="#fff"
+            android:layout_width="match_parent"
+            app:navigationIcon="@drawable/ic_keyboard_backspace_black_24dp"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:id="@+id/view_v"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:padding="6dp"
+        android:layout_below="@id/dailymotion_player"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:backgroundTint="?BackgroundColor_S"
+            android:background="@drawable/card_player"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.like.LikeButton
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:id="@+id/button_wall_fav"
+                android:layout_width="50dp"
+                android:layout_height="55dp"
+                android:layout_alignParentEnd="true"
+                app:anim_scale_factor="2"
+                app:circle_end_color="@color/colorPrimary_Night"
+                app:circle_start_color="#FF0070"
+                app:dots_primary_color="@color/colorPrimary_Night"
+                app:dots_secondary_color="#FF0070"
+                app:icon_size="30dp"
+                app:is_enabled="true"
+                app:like_drawable="@drawable/ic_bookmark"
+                app:unlike_drawable="@drawable/ic_bookmark2" />
+
+            <RelativeLayout
+                android:layout_marginEnd="70dp"
+                android:padding="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textAlignment="viewStart"
+                    android:id="@+id/titel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:padding="5dp"
+                    android:textColor="?Titel_1"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    tools:ignore="MissingPrefix"
+                    tools:text="@string/app_name" />
+
+
+                <TextView
+                    android:layout_marginBottom="3dp"
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_below="@id/titel"
+                    android:paddingLeft="8dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toEndOf="@+id/views_img"
+                    android:text="0"
+                    android:textColor="?Titel_2"
+                    android:textSize="18dp"
+                    tools:ignore="DuplicateIds" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom"
+        android:layout_below="@+id/top">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <WebView
+                    android:id="@+id/webView_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="WebViewLayout" />
+
+
+                <ProgressBar
+                    android:id="@+id/load_video"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:padding="5dp"
+                    android:id="@+id/latest_video"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="12dp"
+                    android:background="?Boder"  />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/comment_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:background="?BackgroundColor"
+        android:id="@+id/bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <RelativeLayout
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/cardmy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:id="@+id/editText_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:focusable="true"
+                android:hint="@string/please_enter_comment"
+                android:maxLines="10"
+                android:minLines="1"
+                android:textColor="#000000"
+                android:textColorHint="#6C6C6C"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageView_comment_send"
+            android:layout_margin="5dp"
+            android:padding="2dp"
+            android:tint="?BackgroundTint"
+            android:src="@drawable/ic_send_black_24dp"
+            android:layout_width="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

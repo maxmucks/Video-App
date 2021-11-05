@@ -1,0 +1,3 @@
+include ':deafop'
+include ':app'
+rootProject.name = "SRHR Videos"

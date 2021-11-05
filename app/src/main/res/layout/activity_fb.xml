@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?BackgroundColor"
+    tools:context=".Activity.video.FbActivity">
+
+
+    <deafop.srhr.video.Activity.FacebookPlayer
+        android:background="@color/black"
+        android:backgroundTint="@color/black"
+        android:id="@+id/fbPlayerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

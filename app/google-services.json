@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "34705474552",
+    "project_id": "srhr-4c853",
+    "storage_bucket": "srhr-4c853.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:34705474552:android:bf4eced61f00a36ec10c0d",
+        "android_client_info": {
+          "package_name": "com.deafop.srhr.video"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "34705474552-bku0a3n7vesn6f4cdu4sjqr3u51cb6jg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7nR__hxGXAyGVQIgxXnTbYf25yEVNjFg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "34705474552-bku0a3n7vesn6f4cdu4sjqr3u51cb6jg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

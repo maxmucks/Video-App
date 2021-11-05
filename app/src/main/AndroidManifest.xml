@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="deafop.srhr.video">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="deafop.srhr.video.Activity.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name="deafop.srhr.video.Activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="deafop.srhr.video.Activity.MainActivity" />
+        <activity android:name="deafop.srhr.video.Activity.LatestActivity" />
+        <activity android:name="deafop.srhr.video.Activity.All_VideoActivity" />
+        <activity android:name="deafop.srhr.video.Activity.Most_viewActivity" />
+        <activity android:name="deafop.srhr.video.Activity.CatActivity" />
+        <activity android:name="deafop.srhr.video.Activity.VideoActivity" />
+        <activity android:name="deafop.srhr.video.Activity.AboutActivity" />
+        <activity android:name="deafop.srhr.video.Activity.SettingActivity" />
+        <activity android:name="deafop.srhr.video.Activity.Banner_Activity" />
+        <activity android:name="deafop.srhr.video.Activity.intActivity" />
+        <activity android:name="deafop.srhr.video.Activity.Fav_VideoActivity" />
+        <activity android:name="deafop.srhr.video.Login.LoginActivity" />
+        <activity android:name="deafop.srhr.video.Login.RegisterActivity" />
+
+        <activity
+            android:name="deafop.srhr.video.Activity.video.DailymotionActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme4" />
+        <activity
+            android:name="deafop.srhr.video.Activity.video.VimeoActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme4" />
+        <activity
+            android:name="deafop.srhr.video.Activity.video.FbActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme4" />
+
+        <activity
+            android:name="deafop.srhr.video.Activity.video.PlayerActivity"
+            android:theme="@style/AppTheme4" />
+        <activity
+            android:name="deafop.srhr.video.Activity.YoutubeActivity"
+            android:theme="@style/AppTheme4" />
+        <activity
+            android:name="deafop.srhr.video.Activity.video.All_PlayerActivity"
+            android:theme="@style/AppTheme4" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_app_id" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.facebook.ads.AudienceNetworkActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+    </application>
+
+</manifest>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="125dp"
+    tools:ignore="MissingDefaultResource">
+
+    <androidx.cardview.widget.CardView
+       app:cardBackgroundColor="?BackgroundColor"
+        android:gravity="center"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="1dp"
+        app:cardUseCompatPadding="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:background="#000"
+                android:layout_alignParentRight="true"
+                android:id="@+id/image"
+                android:scaleType="centerCrop"
+                android:layout_marginRight="2dp"
+                android:layout_width="180dp"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="2dp"
+                android:layout_width="180dp"
+                android:src="@drawable/bg_gradient_black_round"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="145dp"
+                android:layout_marginBottom="-2dp"
+                android:layout_marginTop="-2dp"
+                android:scaleType="fitXY"
+                android:layout_width="40dp"
+                android:src="@drawable/dil"
+                android:layout_height="match_parent"
+                app:tint="?BackgroundColor" />
+
+            <TextView
+                android:layout_margin="5dp"
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_toStartOf="@+id/image"
+                android:textSize="18dp"
+                android:shadowColor="?Titel_1"
+                android:text="@string/app_name"
+                android:textColor="?Titel_1"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
